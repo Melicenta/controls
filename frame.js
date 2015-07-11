@@ -2,7 +2,11 @@ function openWindow(id, src, srcArray) {
    var winClose = $('.frame-window-header .close-icon');
 
 
-    $('.frame-window').css('display', 'block');
+    $('.frame-window').css('display', 'block').draggable({
+  		addClasses: false,
+  		handle: ".frame-window-header"
+  	});
+
     show(id, src); //adding current image to the frame
 
     winClose.bind('click', function() {
@@ -18,6 +22,7 @@ function openWindow(id, src, srcArray) {
         var pager = new FramePager(srcArray);
         pager.prevStep();
 	});//backward button
+
 };
 
 var show = function(id, src) {
