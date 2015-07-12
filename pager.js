@@ -38,9 +38,7 @@ function FramePager (srcArray) {
         return show(newId, newSrc);
    };
     
-};
-
-
+}
 
  
 

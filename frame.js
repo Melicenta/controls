@@ -23,7 +23,7 @@ function openWindow(id, src, srcArray) {
         pager.prevStep();
 	});//backward button
 
-};
+}
 
 var show = function(id, src) {
 	var container = $('.image-container'),
