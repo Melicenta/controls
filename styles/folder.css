@@ -1,0 +1,147 @@
+/* 
+    Document   : folder
+    Created on : Dec 29, 2014, 1:32:06 PM
+    Author     : denezhnaya
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.folder-container{
+    background-color: inherit;
+    position: relative;
+    margin: 10px 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none; 
+}
+
+.folder-container .folder{
+    display: block;
+    padding: 5px;
+    margin-right: 20px;
+    background-color: inherit;
+}
+
+.folder-container .folder[data-code='events']{
+    display: none;
+}
+
+.folder-header {
+    border-bottom: 1px solid #E4E4E4;
+    height: .4em;
+    margin-bottom: .5em;
+    position: relative;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.folder-header:hover{
+    border-bottom: 1px solid #E4E4E4;   
+}
+
+.expanded .folder-header{
+    border-bottom: 1px solid #E4E4E4
+}
+
+.folder-container .expanded .folder-title,
+.folder-container .expanded .folder-title:hover{
+    color: #7F8F96;   
+}
+
+.folder-header:hover .folder-title{
+    color: #7F8F96;
+}
+
+.folder-container .folder-title:before{
+    content: '\24E5';
+    position: absolute;
+    font-size: 17pt;
+    height: 28px;
+    width: 24px;
+    left: -36px;
+    top: -8px;
+    color: #E4E4E4;
+    /* background: rgba(0, 0, 0, 0) url(../images/folder-expanded.png) no-repeat center center; */
+    background-color: inherit;
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.folder-container .expanded .folder-title:before{
+    content: '\24E5';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    font-size: 17pt;
+    left: -33px;
+    top: -10px;
+    color: #7F8F96;
+    /*    background: url(../images/folder.png) no-repeat center center;*/
+    background-color: inherit;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+
+}
+
+.folder-container .animated .folder-title:before,.folder-container .expanded.animated .folder-title:before{
+    transition: transform .5s linear;
+}
+
+/* .folder-container span input[type = checkbox]{
+    display: none;
+}*/
+
+.folder-container .folder-title{
+    padding: 0 5px;
+    position: absolute;
+    left: 9px;
+    z-index: 20;
+    cursor: pointer;
+    color: #A6C0CB;
+    font-size: 9pt;
+    background-color: inherit;
+}
+
+.folder-container article{
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    position: relative;
+}
+
+/*.folder input:checked ~ article{
+    box-shadow: 0px 1px 1px #DFDFDF;
+}*/
+
+.folder.expanded article{
+    height: 100%;
+    opacity: 1;
+    padding: 5px;
+}
+
+.folder.animated  article{
+    transition: 
+        opacity 2.5s ease-out,
+        height 2.5s linear;
+}
+
+/*.folder-container article div{
+    padding: 0 5px;
+}*/
+.folder-content .form-section {
+    margin: 0;
+}
+
+.folder-content .form-section form-field {
+    margin: 0;
+}
+
+.folder-content .form-section:last-of-type {
+    margin-top: 20px;
+}
+
+/*folder*/

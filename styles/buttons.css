@@ -1,0 +1,243 @@
+.toggle-buttons-container {
+    display: block;
+    width: 100%;
+    clear: both;
+    position: absolute;
+    bottom: -13px;   
+}
+
+.left-button{   
+}
+
+.button {
+    padding: 10px;
+    background-image: linear-gradient(rgba(249, 247, 247, 0.5),rgb(176, 193, 210));
+    border-radius: 2px;
+    box-shadow: 0 0 1px #D2D2D2;
+    cursor: pointer;    
+    font-size: 11pt;
+    white-space: nowrap;
+    line-height: 27px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none; 
+}
+
+.button:before {
+    padding-right: 3px;
+}
+
+.button:hover {
+    color: #8AA0B5;
+    
+    transition: color linear 0.5s;
+}
+
+.button:before {
+    position: relative;
+    top: 4px;
+}
+
+.button-input {
+    border: none;
+    width: 80px;
+}
+
+input.accept.button {
+    padding: 3px 10px;
+    background-color: #75FF46;
+}
+
+input.accept.button:hover{
+    background-color: #66D440;
+}
+
+.text-button{
+    cursor: pointer;
+    color: #A1B6CD;
+    font-size: 9pt;
+}
+
+.text-button:visited{
+    color: #A1B6CD;
+}
+
+.text-button:hover{
+    text-decoration: underline;
+}
+
+.button-theme-create{
+    background-color: #9963A8;
+}
+
+.button-theme-create:hover {
+    background-color: #A548A8;
+}
+
+.button-event-create{
+    background-color: #9963A8;
+}
+
+.button-event-create:hover {
+    background-color: #A548A8;
+}
+
+.button-search{
+    background-color: #4E4B39;
+}
+
+.button-search:hover{
+    background-color: #191812;
+}
+
+.document {
+    background-color: #64A982;
+}
+
+.document:hover {
+    background-color: #5C9876;
+}
+
+.favor.checked{
+    background-color: #CFBF8C;
+}
+
+.favor.checked:hover{
+    background-color: #BEAF7C;
+}
+
+.favor{
+    background-color: #D7D7D7;
+}
+
+.favor:hover{
+    background-color: #C3C587;
+}
+
+.green {
+    background-color: #5B867B;
+}
+
+.green:hover {
+    background-color: #1B7760;
+}
+
+.red {
+    background-color:  #C7283A;
+}
+
+.red:hover {
+    background-color: #D8071F;
+}
+
+.blue{
+    background-color: #4D5C99;
+}
+
+.blue:hover{
+    background-color: #40496E;
+}
+/*.check-all:before{
+    content: "\2714";
+}
+
+.uncheck:before{
+    content: "\2752";
+}*/
+
+/*.theme-new:before{*/
+    /*content: url(../images/button-icons/head-theme-new.png);*/
+/*}*/
+
+/*.account:before{*/
+    /*content: url(../images/button-icons/glyphicons-25-parents.png);*/
+/*}*/
+
+/*.button-search:before{*/
+    /*content: url(../images/button-icons/glyphicons-28-search.png);*/
+/*}*/
+
+/*.button-create:before {*/
+    /*content: url(../images/button-icons/glyphicons-10-magic.png);*/
+/*}*/
+
+/*.button-theme-edit:before {*/
+    /*content: url(../images/button-icons/glyphicons-31-pencil.png);*/
+/*}*/
+
+/*.button-theme-apply:before {*/
+    /*content: url(../images/button-icons/glyphicons-199-ok.png);*/
+/*}*/
+
+/*.button-theme-delete:before {*/
+    /*content: url(../images/button-icons/glyphicons-198-remove.png);*/
+/*}*/
+/*.button-event-delete:before {*/
+    /*content: url(../images/button-icons/glyphicons-198-remove.png);*/
+/*}*/
+/*.button-stop:before {*/
+    /*content: url(../images/button-icons/glyphicons-175-pause.png);*/
+/*}*/
+
+/*.button-view:before {*/
+    /*content: url(../images/button-icons/glyphicons-52-eye-open.png);*/
+/*}*/
+
+/*.button-active:before {*/
+    /*content: url(../images/button-icons/filter-signal.png);*/
+/*}*/
+
+/*.button-favor:before {*/
+    /*content: url(../images/button-icons/theme-favor.png);*/
+/*}*/
+
+/*.button-favorite:before {*/
+    /*content: url(../images/button-icons/filter-heart-empty.png);*/
+/*}*/
+
+/*.button-own:before {*/
+    /*content: url(../images/button-icons/filter-eye-open.png);*/
+/*}*/
+
+/*.button-sort-alph:before {*/
+    /*content: url(../images/button-icons/filter-sort-alph.png);*/
+/*}*/
+
+/*.button-sort-date:before {*/
+    /*content: url(../images/button-icons/filter-sort-date.png);*/
+/*}*/
+
+/*.button-sort-year:before {*/
+    /*content: url(../images/button-icons/filter-sort-year.png);*/
+/*}*/
+
+/*.button-sort-half-year:before {*/
+    /*content: url(../images/button-icons/filter-sort-half-year.png);*/
+/*}*/
+
+/*.button-sort-quarter:before {*/
+    /*content: url(../images/button-icons/filter-sort-quarter.png);*/
+/*}*/
+
+/*.button-sort-month:before {*/
+    /*content: url(../images/button-icons/filter-sort-month.png);*/
+/*}*/
+
+/*.button-sort-week:before {*/
+    /*content: url(../images/button-icons/filter-sort-week.png);*/
+/*}*/
+
+/*.button-sort-day:before {*/
+    /*content: url(../images/button-icons/filter-sort-day.png);*/
+/*}*/
+
+/*.button-sort-status:before {*/
+    /*content: url(../images/button-icons/filter-signal.png);*/
+/*}*/
+
+/*.button-help:before{*/
+    /*content: url(../images/button-icons/glyphicons-196-circle-info.png);*/
+/*}*/
+

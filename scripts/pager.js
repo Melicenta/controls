@@ -18,9 +18,9 @@ function FramePager (srcArray) {
          newSrc = srcArray[i];
          newId = "img" + i;
     }
-     if ( i > arrLength){
+     if ( i >= arrLength){
         newSrc = srcArray[1];
-        newtId = "img" + 0;
+        newId = "img" + 0;
     }
      return  show(newId, newSrc); 
   };
@@ -38,7 +38,9 @@ function FramePager (srcArray) {
         return show(newId, newSrc);
    };
     
-}
+};
+
+
 
  
 

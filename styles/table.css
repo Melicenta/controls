@@ -1,0 +1,49 @@
+/*
+    Document   : table
+    Created on : Jun 17, 2015, 4:24:36 PM
+    Author     : denezhnaya
+    Description: data tables styles
+*/
+
+.table {
+    box-shadow: 1px -1px 0 #D8D8D8,-1px 0 0 #D8D8D8;
+    width: 91%;
+    margin: 30px 85px;
+    cursor: default;
+}
+
+.table table{
+    width: 100%;
+}
+
+.table th {
+    box-shadow: 0 1px 0 #969696;
+}
+
+.table thead tr:hover{
+    background-color: transparent;
+}
+
+.table td {
+    border-bottom: 1px solid #D8D8D8;
+    border-collapse: collapse;
+    /*    width: 50%; */
+    text-align: center;/*at least*/
+}
+
+.table tbody tr:hover{
+    background-color: #E1E8EF;
+}
+
+.table td:nth-child(2n+1) {
+    border-right: 1px solid #E1E8EF;
+    border-left: 1px solid #E1E8EF;
+}
+
+.table td:last-child {
+    border-right: 0 solid rgba(255,255,255,0);
+}
+
+.table td:first-child {
+    border-left: 0 solid rgba(255,255,255,0);
+}

@@ -1,0 +1,210 @@
+/* 
+    Document   : form
+    Created on : Jan 22, 2015, 4:21:43 PM
+    Author     : denezhnaya
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*general blocks*/
+.form-container{
+    display: table;
+    padding-bottom: 0;
+    margin-right: 30px;
+}
+
+.form-container.authentication {
+    width: 90%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.form-section {
+    clear: both;
+    display: block;
+    position: relative;
+    margin: 20px 20px 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px #DBDBDB dashed;
+}
+
+.form-section:last-of-type{
+    padding-bottom: 0px;
+    border-bottom: 0px #FFF dashed;
+}
+
+.form-field {
+    margin-bottom: 10px;
+    display: table;
+}
+
+.form-field-upper {
+    display: table;
+}
+
+.form-field-lower {
+    display: table;
+    background-color: inherit;
+}
+
+.form-field-left {
+    display: table-cell;
+    width: 500px;
+/*    box-shadow: 1px 0 0 #E4E4E4;*/
+    position: relative;
+}
+
+.invalid .form-field-left {
+    box-shadow: 1px 0 0 #B01A42;
+}
+
+.form-field-right {
+    display: table-cell;
+    width: 500px;
+    vertical-align: middle;
+}
+
+.authentication .form-field-right {
+    width: 50%;
+}
+
+.form-field-details {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    vertical-align: middle;
+    text-align: left;
+    color: #A3A3A3;
+    font-size: 9pt;
+}
+
+.form-field.invalid .form-field-error{
+    float: left;
+    padding: 10px 0 10px 20px;
+    vertical-align: middle;
+    text-align: left;
+    color: #B01A42;
+    font-size: 9pt;
+    display: inline;
+}
+
+.form-field-error .message {
+    color: #C35858;
+    position: relative;
+    left: 40%;
+    font-weight: bolder;
+}
+
+.form-field-toggle {
+    padding-left: 40px;
+    display: inline-block;
+}
+
+.submit-button-container {
+    text-align: right;
+    display: block;
+}
+/*general blocks*/
+
+
+/*turned-on/off styles*/
+.form-field.invalid .form-field-details{
+    display: none;
+}
+
+.form-field.inactive .form-field-lower{
+    display: none;
+}
+
+.form-field-error{
+    display: none;
+}
+
+/*turned-on/off styles*/
+
+
+/*fields content*/
+.theme-access .form-field-caption{
+    float: left;
+    width: 100%;
+}
+
+.form-field-upper .form-field-caption{
+    width: auto;
+}
+
+.form-field-upper {
+    display: table;
+    margin-bottom: 10px;
+}
+
+.form-field-caption {
+    display: inline-block;
+    width: 220px;
+    margin: 10px 0 0 0;
+    font-size: 12pt;
+    color: #777F9B;
+}
+
+.form-field-input input[type=text],input[type=password],textarea {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0 #175D80, inset 0px 0px 1px 0px #0C2C3D;
+    border: 0;
+    padding: 7px;
+    width: 85%;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.form-field-input textarea {
+    height: 40px;
+    resize: none;
+    font-size: 12px;
+}
+
+.form-field-input input[type=text].login, input[type=password].password {
+    width: 80%;
+}
+
+.time-range{
+/*    margin: 20px 0 0 0;*/
+    display: table;
+}
+
+.form-delimiter {
+    margin: 0 10px;
+    font-size: 12pt;
+    color: #777F9B;
+}
+
+.theme-access ul{
+/*    margin: 10px 0px;*/
+    float: left;
+}
+
+
+.form-field-toggle a{
+    font-size: 10px;
+}
+
+
+.form-section .button {
+    color: #FFF;
+}
+
+.datepicker{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0 #175D80, inset 0px 0px 1px 0px #0C2C3D;
+    border: 0;
+    padding: 7px;
+    font-size: 14px;
+    line-height: 16px;
+    width: 125px;
+}
+
+/*fields content*/
+
+
+
