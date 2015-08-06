@@ -1,0 +1,68 @@
+/**/
+.menu-button {
+    display: block;
+    height: 30px;
+    width: 50px;
+
+    cursor: pointer;
+}
+
+.menu-button svg {
+    fill: #BB7EBB;
+    stroke: #DA40FF;
+}
+
+.menu-button.pushed {
+    box-shadow: 0 0 1px #EA72EA;
+}
+
+.menu-panel {
+    position: relative;
+    width: 300px;
+}
+
+.menu-container {
+    display: none;
+}
+
+.menu-container.visible {
+    display: table;
+    border: 1px #DA40FF solid;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    z-index: 50;
+}
+
+/**/
+
+.smart-menu-panel span {
+    display: block;
+    color: #BFBFBF;
+    text-shadow: -2px 1px 5px #E0D2E0;
+    padding: 8px 30px 8px 11px;
+    cursor: default;
+    font-size: 10pt;
+}
+
+.smart-menu-panel span.menu-item-enabled {
+    color: #DE7FF5;
+    cursor: pointer;
+}
+
+.smart-menu-panel span.menu-item-enabled:hover {
+    background-color: rgba(245, 182, 245, 0.11);
+}
+
+.smart-menu-item-group {
+    display: table;
+    width: 100%;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #DA40FF;
+    margin-bottom: 4px;
+}
+
+.smart-menu-item-group:last-of-type {
+    border-top: 1px solid #DA40FF;
+    border-bottom: 0 solid rgba(0, 0, 0, 0);
+}

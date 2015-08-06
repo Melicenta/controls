@@ -47,7 +47,8 @@
 
 input.accept.button {
     padding: 3px 10px;
-    background-color: #75FF46;
+    background-color: #9EE287;
+    background-image: none;
 }
 
 input.accept.button:hover{
